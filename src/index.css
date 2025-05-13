@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Alegreya+Sans:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Alegreya+Sans:wght@300;400;500;700&display=swap");
 
 @layer base {
   :root {
@@ -51,13 +51,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
-    
-    /* Custom colors for estate site */
-    --burgundy: 357 73% 26%;
-    --gold: 46 57% 52%;
-    --cream: 60 33% 92%;
-    --dark-brown: 29 27% 23%;
-    --brown: 30 12% 30%;
+
+    /* Custom colors for estate site - pastel version */
+    --burgundy: 356 35% 70%;
+    --gold: 48 40% 75%;
+    --cream: 60 25% 96%;
+    --dark-brown: 30 20% 45%;
+    --brown: 28 15% 65%;
   }
 
   .dark {
@@ -107,68 +107,68 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* Custom estate classes */
+
+  /* Custom estate classes with pastel colors */
   .bg-burgundy {
-    @apply bg-[#751115];
+    @apply bg-[#D9A6A6];
   }
-  
+
   .text-burgundy {
-    @apply text-[#751115];
+    @apply text-[#D9A6A6];
   }
-  
+
   .border-burgundy {
-    @apply border-[#751115];
+    @apply border-[#D9A6A6];
   }
-  
+
   .bg-gold {
-    @apply bg-[#D4AF37];
+    @apply bg-[#E5D1A1];
   }
-  
+
   .text-gold {
-    @apply text-[#D4AF37];
+    @apply text-[#E5D1A1];
   }
-  
+
   .border-gold {
-    @apply border-[#D4AF37];
+    @apply border-[#E5D1A1];
   }
-  
+
   .bg-cream {
-    @apply bg-[#F5F5DC];
+    @apply bg-[#F9F6F0];
   }
-  
+
   .text-cream {
-    @apply text-[#F5F5DC];
+    @apply text-[#F9F6F0];
   }
-  
+
   .border-cream {
-    @apply border-[#F5F5DC];
+    @apply border-[#F9F6F0];
   }
-  
+
   .bg-dark-brown {
-    @apply bg-[#4A3C2C];
+    @apply bg-[#A89888];
   }
-  
+
   .text-dark-brown {
-    @apply text-[#4A3C2C];
+    @apply text-[#A89888];
   }
-  
+
   .border-dark-brown {
-    @apply border-[#4A3C2C];
+    @apply border-[#A89888];
   }
-  
+
   .text-brown {
-    @apply text-[#6C5F4F];
+    @apply text-[#BFB4A5];
   }
-  
+
   .font-cormorant {
-    font-family: 'Cormorant', serif;
+    font-family: "Cormorant", serif;
   }
-  
+
   .font-alegreya {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
   }
-  
+
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -179,7 +179,7 @@
       transform: translateY(0);
     }
   }
-  
+
   .animate-fade-in {
     animation: fade-in 0.6s ease-out forwards;
   }
