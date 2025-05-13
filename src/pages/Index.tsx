@@ -63,21 +63,33 @@ const Index = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Button
             variant={activeTab === "mansion" ? "default" : "outline"}
-            className={`font-cormorant text-lg px-6 py-4 ${activeTab === "mansion" ? "bg-burgundy text-white" : "border-burgundy text-burgundy hover:bg-burgundy/10"}`}
+            className={`font-cormorant text-lg px-6 py-4 ${
+              activeTab === "mansion"
+                ? "bg-burgundy text-white"
+                : "border-burgundy text-burgundy hover:bg-burgundy/10"
+            }`}
             onClick={() => handleTabChange("mansion")}
           >
             Главный дом
           </Button>
           <Button
             variant={activeTab === "tavern" ? "default" : "outline"}
-            className={`font-cormorant text-lg px-6 py-4 ${activeTab === "tavern" ? "bg-burgundy text-white" : "border-burgundy text-burgundy hover:bg-burgundy/10"}`}
+            className={`font-cormorant text-lg px-6 py-4 ${
+              activeTab === "tavern"
+                ? "bg-burgundy text-white"
+                : "border-burgundy text-burgundy hover:bg-burgundy/10"
+            }`}
             onClick={() => handleTabChange("tavern")}
           >
             Трактир
           </Button>
           <Button
             variant={activeTab === "hotel" ? "default" : "outline"}
-            className={`font-cormorant text-lg px-6 py-4 ${activeTab === "hotel" ? "bg-burgundy text-white" : "border-burgundy text-burgundy hover:bg-burgundy/10"}`}
+            className={`font-cormorant text-lg px-6 py-4 ${
+              activeTab === "hotel"
+                ? "bg-burgundy text-white"
+                : "border-burgundy text-burgundy hover:bg-burgundy/10"
+            }`}
             onClick={() => handleTabChange("hotel")}
           >
             Гостиница
@@ -87,44 +99,41 @@ const Index = () => {
         {/* Content Sections */}
         <div className="animate-fade-in">
           {activeTab === "mansion" && (
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="rounded-lg overflow-hidden h-96">
-                <img
-                  src="https://images.unsplash.com/photo-1604514813549-fbb1cc732663?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                  alt="Главный дом усадьбы"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div>
-                <h3 className="font-cormorant text-3xl font-bold text-dark-brown mb-4">
-                  Главный дом
-                </h3>
-                <p className="font-alegreya text-base text-brown mb-6">
-                  Построенный в 1765 году архитектором Василием Баженовым,
-                  главный дом усадьбы является образцом классической архитектуры
-                  эпохи Екатерины II. Отреставрированные интерьеры сохраняют
-                  подлинную атмосферу того времени с антикварной мебелью,
-                  картинами и предметами быта.
-                </p>
-                <div className="font-alegreya mb-2 flex items-center text-brown gap-2">
-                  <Icon name="Clock" className="text-burgundy" />
-                  <span>
-                    Часы работы: 10:00 - 18:00 (вт-вс), понедельник — выходной
-                  </span>
+            <div className="animate-fade-in">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="md:w-1/2">
+                  <img
+                    src="https://images.unsplash.com/photo-1611048267451-e6ed903d689f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                    alt="Главный дом усадьбы"
+                    className="w-full h-80 object-cover rounded-lg shadow-lg"
+                  />
                 </div>
-                <div className="font-alegreya mb-2 flex items-center text-brown gap-2">
-                  <Icon name="Phone" className="text-burgundy" />
-                  <span>Телефон: +7 (495) 123-45-67</span>
-                </div>
-                <div className="font-alegreya mb-2 flex items-center text-brown gap-2">
-                  <Icon name="Mail" className="text-burgundy" />
-                  <span>Почта: mansion@goldage.ru</span>
-                </div>
-                <div className="font-alegreya flex items-center text-brown gap-2">
-                  <Icon name="MapPin" className="text-burgundy" />
-                  <span>
-                    Адрес: Московская обл., с. Заречье, ул. Дворянская, д. 1
-                  </span>
+                <div className="md:w-1/2 space-y-4">
+                  <h3 className="font-cormorant text-2xl font-semibold text-dark-brown border-b border-burgundy/40 pb-2">
+                    Описание
+                  </h3>
+                  <p className="font-alegreya text-lg text-dark-brown/90">
+                    Тыр пыр
+                  </p>
+
+                  <h3 className="font-cormorant text-2xl font-semibold text-dark-brown border-b border-burgundy/40 pb-2 mt-6">
+                    Часы работы
+                  </h3>
+                  <div className="font-alegreya grid grid-cols-2 gap-2 text-lg">
+                    <div>Понедельник - Пятница:</div>
+                    <div>10:00 - 18:00</div>
+                    <div>Суббота - Воскресенье:</div>
+                    <div>10:00 - 20:00</div>
+                  </div>
+
+                  <h3 className="font-cormorant text-2xl font-semibold text-dark-brown border-b border-burgundy/40 pb-2 mt-6">
+                    Контакты
+                  </h3>
+                  <div className="font-alegreya space-y-1 text-lg">
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: mansion@estate.ru</p>
+                    <p>Адрес: ул. Дворянская, д. 1, Поместье "Золотой Век"</p>
+                  </div>
                 </div>
               </div>
             </div>
